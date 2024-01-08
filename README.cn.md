@@ -35,8 +35,9 @@ $ make install DESTDIR={your destination}
 ```bash
 $ mkdir build
 $ cd build
-# cmake .. -DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm.himix200.cmake
-$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm.himix200.cmake -DTOOLCHAIN_ROOTDIR={your toolchain directory}/arm-himix200-linux
+cmake .. -DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm.v85x.cmake
+# cmake .. -DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm.himix200.cmake 
+# cmake .. -DCMAKE_TOOLCHAIN_FILE=../platforms/linux/arm.himix200.cmake -DTOOLCHAIN_ROOTDIR={your toolchain directory}/arm-himix200-linux
 $ make -j
 $ make install DESTDIR={your destination}
 ```
